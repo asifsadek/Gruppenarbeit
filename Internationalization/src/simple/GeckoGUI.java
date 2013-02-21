@@ -18,6 +18,8 @@ public class GeckoGUI extends javax.swing.JFrame {
      */
     public GeckoGUI() {
         initComponents();
+        
+        this.setLocation(450, 100);
     }
 
     /**

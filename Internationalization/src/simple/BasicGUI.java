@@ -17,6 +17,8 @@ public class BasicGUI extends javax.swing.JFrame {
      */
     public BasicGUI() {
         initComponents();
+        
+        this.setLocation(450, 300);
     }
 
     /**

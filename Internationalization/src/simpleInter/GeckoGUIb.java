@@ -18,6 +18,8 @@ public class GeckoGUIb extends javax.swing.JFrame {
      */
     public GeckoGUIb() {
         initComponents();
+        
+        this.setLocation(450, 100);
     }
 
     /**
