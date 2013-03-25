@@ -10,6 +10,7 @@ package gecko;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import translationtoolbox.PopupListener;
+import translationtoolbox.TranslationTools;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -106,6 +107,13 @@ public class GeckoGUI extends javax.swing.JFrame {
         jMenuItem4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
+            }
+        });
+        
+        // Give an action listener to our "Translation Tools" menu item
+        jMenuItem45.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new TranslationTools().setVisible(true);
             }
         });
         
