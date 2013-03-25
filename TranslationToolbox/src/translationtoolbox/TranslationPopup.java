@@ -32,7 +32,7 @@ public class TranslationPopup extends javax.swing.JFrame {
         this.evt = evt;
         
         String elementText = getElementText();
-        
+
         jTextField2.setText(elementText);
         jTextField1.setEditable(false);
         jTextField2.setEditable(false);

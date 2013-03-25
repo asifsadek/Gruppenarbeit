@@ -80,6 +80,7 @@ public class GeckoGUI extends javax.swing.JFrame {
         jMenuItem42.addMouseListener(new PopupListener());
         jMenuItem43.addMouseListener(new PopupListener());
         jMenuItem44.addMouseListener(new PopupListener());
+        jMenuItem45.addMouseListener(new PopupListener());
         
         // Give check box menu our mouse listener
         jCheckBoxMenuItem1.addMouseListener(new PopupListener());
@@ -1282,6 +1283,12 @@ public class GeckoGUI extends javax.swing.JFrame {
 
         jMenuItem40.setText("Remote Access Settings");
         jMenu9.add(jMenuItem40);
+        jSeparator6 = new javax.swing.JPopupMenu.Separator();
+        jMenu9.add(jSeparator6);
+        
+        jMenuItem45 = new javax.swing.JMenuItem();
+        jMenuItem45.setText("Translation Tools");
+        jMenu9.add(jMenuItem45);
 
         jMenuBar1.add(jMenu9);
 
@@ -1560,6 +1567,7 @@ public class GeckoGUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem42;
     private javax.swing.JMenuItem jMenuItem43;
     private javax.swing.JMenuItem jMenuItem44;
+    private javax.swing.JMenuItem jMenuItem45;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
@@ -1582,6 +1590,7 @@ public class GeckoGUI extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JPopupMenu.Separator jSeparator6;
     private javax.swing.JTabbedPane jTabbedPane13;
     // End of variables declaration                   
 }
