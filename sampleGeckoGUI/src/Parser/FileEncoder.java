@@ -11,7 +11,7 @@ import java.io.IOException;
  * This program works independently of the default locale 
  * and charset being used by the underlying operating system.
  * 
- * @author: Josef Ziegler, Nick Eyring
+ * @author: Josef Ziegler
  *
  */
 
@@ -25,6 +25,8 @@ public class FileEncoder {
     
     public static void main(String[] args) {
 	try {
+	    if (args.length != 2)
+		throw new IOException("Wrong number of arguments specified");
 	    FileInputStream fis = new FileInputStream(args[0]);
 	    byte[] propertyContents = new byte[fis.available()];
 	    fis.read(propertyContents, 0, propertyContents.length);
@@ -40,6 +42,7 @@ public class FileEncoder {
 	     * GeckoFrame.jMenuItem8.text = Create Subcircuit
 	     *
 	     * Correponding output:
+	     * GeckoFrame.jMenuItem8.text =
 	     * <translate>
 	     * <!--T:GeckoFrame.jMenuItem8.text-->
 	     * Create Subcircuit
