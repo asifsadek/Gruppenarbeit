@@ -70,7 +70,8 @@ public class FileEncoder {
 		}
 		else if (parts.length == 2) {
 		    // if there is exactly one equality sign
-		    Output += lineSeparator + "<translate>" + lineSeparator + 
+		    Output += lineSeparator + parts[0] + " =" + 
+			    lineSeparator + "<translate>" + lineSeparator + 
 			"<!--T:" + parts[0] + "-->" + lineSeparator +  
 			parts[1] + lineSeparator + "</translate>" + lineSeparator;
 		}
