@@ -10,7 +10,7 @@ import java.io.IOException;
  * This program works independently of the default locale 
  * and charset being used by the underlying operating system.
  * 
- * @author: Josef Ziegler, Nick Eyring
+ * @author: Josef Ziegler
  *
  */
 
