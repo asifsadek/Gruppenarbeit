@@ -65,16 +65,16 @@ public class FileEncoder {
 		    lines[i] = lines[i].substring(0, lines[i].indexOf("#"));
 		}
 		String[] parts = lines[i].split("=");
-		if (parts.length > 2) {
-		    throw new IOException("more than one equality sign appears on a line");
-		}
-		else if (parts.length == 2) {
-		    // if there is exactly one equality sign
-		    Output += lineSeparator + parts[0] + " =" + 
-			    lineSeparator + "<translate>" + lineSeparator + 
-			"<!--T:" + parts[0] + "-->" + lineSeparator +  
-			parts[1] + lineSeparator + "</translate>" + lineSeparator;
-		}
+                System.out.println("at line:  " + i);
+                if (parts.length > 1) {
+                  Output += lineSeparator + parts[0] + " =" + 
+                      lineSeparator + "<translate>" + lineSeparator + 
+                      "<!--T:" + parts[0] + "-->" + lineSeparator +  
+                      parts[1];
+                  for (int j = 2; j < parts.length; j++)
+                    Output += parts[j];
+                  Output += lineSeparator + "</translate>" + lineSeparator;
+                }
 	    }
 
 	    byte[] convertedContent = Output.getBytes("UTF-8");	    
